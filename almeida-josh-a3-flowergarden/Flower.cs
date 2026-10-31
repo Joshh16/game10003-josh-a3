@@ -14,5 +14,6 @@ namespace MohawkGame2D
             Y = y;
             ColorType = colorType;
         }
+       
+        }
     }
-}
