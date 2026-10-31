@@ -1,10 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace almeida_josh_a3_flowergarden
+using System.Numerics;
+namespace MohawkGame2D
 {
-    internal class Flower
+    public class Flower
     {
+        public float X;
+        public float Y;
+        public int ColorType;
+
+        public Flower(float x, float y, int colorType)
+        {
+            X = x;
+            Y = y;
+            ColorType = colorType;
+        }
     }
 }
