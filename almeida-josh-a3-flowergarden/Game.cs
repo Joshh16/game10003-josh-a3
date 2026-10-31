@@ -5,25 +5,17 @@ using System.Numerics;
 // The namespace your code is in.
 namespace MohawkGame2D
 {
-    /// <summary>
-    ///     Your game code goes inside this class!
-    /// </summary>
+    
     public class Game
     {
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+        Garden garden = new Garden();
         public void Setup()
         {
             Window.SetTitle("Flower Garden");
             Window.SetSize(400, 400);
             Draw.SetLineSize(2);
-
+            
         }
-
-        /// <summary>
-        ///     Update runs every frame.
-        /// </summary>
         public void Update()
         {
             // Sky
@@ -33,9 +25,7 @@ namespace MohawkGame2D
             Draw.SetFillColor(0, 160, 0);
             Draw.Rectangle(0, 300, 400, 100);
 
-            DrawFlower(78, 240, 0);
-            DrawFlower(198, 210, 1);
-            DrawFlower(318, 240, 2);
+            garden.DrawGarden(this);
 
         }
 public void DrawFlower(int x, int y, int colorType)
