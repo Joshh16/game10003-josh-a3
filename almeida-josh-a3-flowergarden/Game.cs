@@ -30,7 +30,7 @@ namespace MohawkGame2D
             Window.ClearBackground(135, 206, 235);
 
             // Grass
-            Draw.SetFillColor(Color.Green);
+            Draw.SetFillColor(0,160,0);
             Draw.Rectangle(0, 300, 400, 100);
 
             // Flower stem
