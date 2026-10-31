@@ -33,46 +33,99 @@ namespace MohawkGame2D
             Draw.SetFillColor(0,160,0);
             Draw.Rectangle(0, 300, 400, 100);
 
+            
+                                                               //Flower 1
             // Flower stem
             Draw.SetFillColor(0,150,0);
             Draw.Rectangle(78, 250, 6, 50);
-
+            
             // Flower petals
             Draw.SetFillColor(255, 192, 203);
-            Draw.Circle(68, 240, 10);
-            Draw.Circle(88, 240, 10);
-            Draw.Circle(78, 230, 10);
-            Draw.Circle(78, 250, 10);
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (i == 0)
+                {
+                    Draw.Circle(68, 240, 10);
+                }
+                else if (i == 1)
+                {
+                    Draw.Circle(88, 240, 10);
+                }
+                else if (i == 2)
+                {
+                    Draw.Circle(78, 230, 10);
+                }
+                else
+                {
+                    Draw.Circle(78, 250, 10);
+                }
+            }
 
             // Flower centre
             Draw.SetFillColor(Color.Yellow);
             Draw.Circle(78, 240, 7);
 
+            
+                                                            //Flower 2
             // Flower 2 stem
             Draw.SetFillColor(0,150,0);
             Draw.Rectangle(198, 220, 6, 80);
 
             // Flower 2 petals
             Draw.SetFillColor(128, 0, 128);
-            Draw.Circle(188, 210, 10);
-            Draw.Circle(208, 210, 10);
-            Draw.Circle(198, 200, 10);
-            Draw.Circle(198, 220, 10);
+            
+            for (int i = 0; i < 4; i++)
+            {
+                if (i == 0)
+                {
+                    Draw.Circle(188, 210, 10);
+                }
+                else if (i == 1)
+                {
+                    Draw.Circle(208, 210, 10);
+                }
+                else if (i == 2)
+                {
+                    Draw.Circle(198, 200, 10);
+                }
+                else
+                {
+                    Draw.Circle(198, 220, 10);
+                }
+            }
 
             // Flower 2 centre
             Draw.SetFillColor(Color.Yellow);
             Draw.Circle(198, 210, 7);
 
+                                                               //Flower 3
             // Flower 3 stem
             Draw.SetFillColor(0,150,0);
             Draw.Rectangle(318, 250, 6, 50);
 
             // Flower 3 petals
             Draw.SetFillColor(Color.Red);
-            Draw.Circle(308, 240, 10);
-            Draw.Circle(328, 240, 10);
-            Draw.Circle(318, 230, 10);
-            Draw.Circle(318, 250, 10);
+            
+            for (int i = 0; i < 4; i++)
+            {
+                if (i == 0)
+                {
+                    Draw.Circle(308, 240, 10);
+                }
+                else if (i == 1)
+                {
+                    Draw.Circle(328, 240, 10);
+                }
+                else if (i == 2)
+                {
+                    Draw.Circle(318, 230, 10);
+                }
+                else
+                {
+                    Draw.Circle(318, 250, 10);
+                }
+            }
 
             // Flower 3 centre
             Draw.SetFillColor(Color.Yellow);
