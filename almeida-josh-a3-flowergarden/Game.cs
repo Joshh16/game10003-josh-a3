@@ -21,6 +21,24 @@ namespace MohawkGame2D
             // Sky
             Window.ClearBackground(135, 206, 235);
 
+            // Clouds
+            Draw.SetFillColor(255, 255, 255);
+            
+            //Cloud 1
+            Draw.Circle(75, 75, 15);
+            Draw.Circle(90, 65, 18);
+            Draw.Circle(105, 75, 15);
+
+            // Cloud 2
+            Draw.Circle(275, 110, 15);
+            Draw.Circle(290, 100, 18);
+            Draw.Circle(305, 110, 15);
+
+            //Cloud 3
+            Draw.Circle(200, 50, 15);
+            Draw.Circle(215, 40, 18);
+            Draw.Circle(230, 50, 15);
+
             // Grass
             Draw.SetFillColor(0, 160, 0);
             Draw.Rectangle(0, 300, 400, 100);
