@@ -24,4 +24,30 @@ public class Garden
         game.DrawFlower((int)flower2.X, (int)flower2.Y, flower2.ColorType);
         game.DrawFlower((int)flower3.X, (int)flower3.Y, flower3.ColorType);
     }
+
+    // Check if a flower is clicked and change its color
+    public void CheckFlowerClick()
+    {
+        if (Input.IsMouseButtonPressed(MouseButton.Left))
+        {
+            int mouseX = Input.GetMouseX();
+            int mouseY = Input.GetMouseY();
+
+            if (mouseX >= flower1.X - 20 && mouseX <= flower1.X + 20 &&
+                mouseY >= flower1.Y - 20 && mouseY <= flower1.Y + 20)
+            {
+                flower1.ColorType = (flower1.ColorType + 1) % 3;
+            }
+            else if (mouseX >= flower2.X - 20 && mouseX <= flower2.X + 20 &&
+                     mouseY >= flower2.Y - 20 && mouseY <= flower2.Y + 20)
+            {
+                flower2.ColorType = (flower2.ColorType + 1) % 3;
+            }
+            else if (mouseX >= flower3.X - 20 && mouseX <= flower3.X + 20 &&
+                     mouseY >= flower3.Y - 20 && mouseY <= flower3.Y + 20)
+            {
+                flower3.ColorType = (flower3.ColorType + 1) % 3;
+            }
+        }
+    }
 }

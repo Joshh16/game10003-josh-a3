@@ -25,6 +25,7 @@ namespace MohawkGame2D
             Draw.SetFillColor(0, 160, 0);
             Draw.Rectangle(0, 300, 400, 100);
 
+            garden.CheckFlowerClick();
             garden.DrawGarden(this);
 
         }
