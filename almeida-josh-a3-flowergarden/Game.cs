@@ -24,7 +24,7 @@ namespace MohawkGame2D
             // Clouds
             Draw.SetFillColor(255, 255, 255);
             
-            //Cloud 1
+            // Cloud 1
             Draw.Circle(75, 75, 15);
             Draw.Circle(90, 65, 18);
             Draw.Circle(105, 75, 15);
@@ -34,7 +34,7 @@ namespace MohawkGame2D
             Draw.Circle(290, 100, 18);
             Draw.Circle(305, 110, 15);
 
-            //Cloud 3
+            // Cloud 3
             Draw.Circle(200, 50, 15);
             Draw.Circle(215, 40, 18);
             Draw.Circle(230, 50, 15);
@@ -42,6 +42,10 @@ namespace MohawkGame2D
             // Grass
             Draw.SetFillColor(0, 160, 0);
             Draw.Rectangle(0, 300, 400, 100);
+
+            // Sun
+            Draw.SetFillColor(255, 255, 0);
+            Draw.Circle(390, 20, 30);
 
             garden.CheckFlowerClick();
             garden.DrawGarden(this);
